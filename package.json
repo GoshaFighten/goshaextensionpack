@@ -3,7 +3,7 @@
   "displayName": "GoshaExtensionPack",
   "description": "Gosha's VS Code Extensions",
   "publisher": "Gosha",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.33.0"
   },
