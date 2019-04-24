@@ -1,0 +1,20 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - '10'
+
+branches:
+  only:
+    - master
+
+cache: yarn
+
+before_install: yarn global add vsce
+
+script:
+  - git remote rm origin &&
+    git remote add origin https://GoshaFighten:${GITHUB_TOKEN}@github.com/GoshaFighten/goshaextensionpack.git &&
+    git symbolic-ref HEAD refs/heads/master &&
+    yarn run deploy

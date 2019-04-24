@@ -1,0 +1,9 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+vsc-extension-quickstart.md
+gulpfile.js
+yarn.lock
+.huskyrc.json
+.travis.yml
+deploy.js

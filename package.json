@@ -1,0 +1,65 @@
+{
+  "name": "goshaextensionpack1",
+  "displayName": "GoshaExtensionPack",
+  "description": "Gosha's VS Code Extensions",
+  "publisher": "Gosha",
+  "version": "0.0.0",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "repository": {
+    "url": "https://github.com/GoshaFighten/goshaextensionpack"
+  },
+  "homepage": "hhttps://github.com/GoshaFighten/goshaextensionpack",
+  "bugs": {
+    "url": "https://github.com/GoshaFighten/goshaextensionpack/issues"
+  },
+  "scripts": {
+    "deploy": "node deploy.js"
+  },
+  "extensionPack": [
+    "pkief.material-icon-theme",
+    "jarek-toro.angular-i18n",
+    "Metatype.copilot-vscode",
+    "PeterJausovec.vscode-docker",
+    "aaron-bond.better-comments",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "CoenraadS.bracket-pair-colorizer",
+    "eg2.vscode-npm-script",
+    "SimonTest.simontest",
+    "rexebin.f12-open-file",
+    "gamunu.vscode-yarn",
+    "pflannery.vscode-versionlens",
+    "pmneo.tsimporter",
+    "RohanAgarwal-Vscode.angular-translator",
+    "eamodio.gitlens",
+    "GitHub.vscode-pull-request-github",
+    "donjayamanne.githistory",
+    "joelday.docthis",
+    "Gruntfuggly.todo-tree",
+    "MS-vsliveshare.vsliveshare",
+    "esbenp.prettier-vscode",
+    "MariusAlchimavicius.json-to-ts",
+    "nrwl.angular-console",
+    "Angular.ng-template",
+    "vsciot-vscode.vscode-arduino",
+    "ms-vscode.cpptools",
+    "ms-vscode.csharp",
+    "jchannon.csharpextensions",
+    "msjsdiag.debugger-for-chrome",
+    "wix.vscode-import-cost",
+    "ms-python.python",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "codezombiech.gitignore",
+    "christian-kohler.npm-intellisense"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "husky": "^2.0.0",
+    "release-it": "^10.4.4",
+    "shelljs.exec": "^1.1.8"
+  }
+}
