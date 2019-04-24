@@ -28,9 +28,14 @@ const latestTag = exec('git describe --abbrev=0').stdout.replace(
   ''
 );
 
-const result2 = exec(`git show ${latestTag}:package.json`);
-const config2 = JSON.parse(result2.stdout);
-delete config2['version'];
+let config2;
+if (latestTag) {
+  const result2 = exec(`git show ${latestTag}:package.json`);
+  config2 = JSON.parse(result2.stdout);
+  delete config2['version'];
+} else {
+  config2 = '';
+}
 
 if (JSON.stringify(config1) != JSON.stringify(config2)) {
   releaseIt(options).then(output => {
